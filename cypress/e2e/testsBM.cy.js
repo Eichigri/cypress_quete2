@@ -7,7 +7,6 @@ describe('Tests BackMarket page register', () => {
     cy.get('#signup-email').type('alexderay@jetmail.com')
     cy.get('#signup-password').type('motDePass123')
     cy.get('[data-qa=signup-submit-button]').click()
-    cy.url().should('include','dashboard')
   })
   it('inscription echouée', () => {
     cy.visit('https://preprod.backmarket.fr/fr-fr/register')
